@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="dsc.jpeg" alt="Logo" class="h-12 mr-2 ">
+                <span class="text-2xl font-bold hover:text-blue-300 hover:scale-110 transition duration-300 ease-in-out">Data Science Club</span>
+            </div>
+            <div class="sm:flex sm:justify-end">
+                <nav>
+                    <button id="mobile-menu-toggle" class="sm:block md:hidden hover:bg-white hover:text-blue-500 transition duration-300 ease-in-out rounded-md px-4 py-2">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <ul id="mobile-menu" class="sm:flex space-x-4">
+                        <li><a href="#events" class="hover:underline hover:text-white hover:bg-blue-500 hover:scale-110 hover:translate-y-1 transition duration-200 ease-in-out font-bold">Live!</a></li>
+                        <li><a href="#program" class="hover:underline hover:text-white hover:bg-blue-400 hover:scale-110 hover:translate-y-1 transition duration-300 ease-in-out font-bold">Program</a></li>
+                        <li><a href="#schedule" class="hover:underline hover:text-white hover:bg-blue-400 hover:scale-110 hover:translate-y-1 transition duration-300 ease-in-out font-bold">Timetable</a></li>
+                        <li><a href="#about" class="hover:underline hover:text-white hover:bg-blue-400 hover:scale-110 hover:translate-y-1 transition duration-300 ease-in-out font-bold">About</a></li>
+                        <li><a href="#sponsors" class="hover:underline hover:text-white hover:bg-blue-400 hover:scale-110 hover:translate-y-1 transition duration-300 ease-in-out font-bold">Sponsors</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+
+    <section id="hero" class="relative text-center">
+        <img src="club.png" alt="Hero Image" class="w-full h-auto">
+    </section>
+
+    <section id="events" class="container mx-auto bg-white p-8 my-8 rounded shadow">
+        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 text-blue-900 mb-4">Upcoming Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl hover:shadow-black transition duration-300 ease-in-out">
+                <!-- rest of your code -->
+                <img src="flames.png" alt="Event 1" class="w-full h-70 object-top">
+                <div class="p-4 bg-blue-900 text-white h-full">
+                    <h3 class="text-lg font-bold">FLAMES</h3>
+                    <p class="mt-2">10:30 AM | 16.06.2024</p>
+                    <button class="mt-4 py-2 px-4 bg-white text-blue-900 font-semibold rounded hover:bg-gray-200">Learn More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl hover:shadow-black transition duration-300 ease-in-out">
+                <img src="job.png" alt="Event 2" class="w-full h-70 object-top">
+                <div class="p-4 bg-blue-900 text-white h-full">
+                    <h3 class="text-lg font-bold">JOB SIMULATION WORKSHOP</h3>
+                    <p class="mt-2">3:30 PM | 17.06.2024</p>
+                    <button class="mt-4 py-2 px-4 bg-white text-blue-900 font-semibold rounded hover:bg-gray-200">Learn More</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl hover:shadow-black transition duration-300 ease-in-out">
+                <img src="boot2.png" alt="Event 3" class="w-full h-55 object-top">
+                <div class="p-4 bg-blue-900 text-white h-full">
+                    <h3 class="text-lg font-bold">MACHINE LEARNING BOOTCAMP</h3>
+                    <p class="mt-2">2:00 PM | 18.06.2024</p>
+                    <button class="mt-4 py-2 px-4 bg-white text-blue-900 font-semibold rounded hover:bg-gray-200">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers" class="container mx-auto bg-white p-8 my-8 rounded shadow">
+        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 text-blue-900 mb-4">Speakers</h2>
+        <div class="mb-8 flex flex-col items-center">
+            <img src="sp1.png" alt="Speaker 1" class="w-24 h-24 mb-2 rounded-full">
+            <h3 class="text-xl font-semibold">Rajeev Kanth</h3>
+            <p>Topic: Machine Learning</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="sp2.png" alt="Speaker 2" class="w-24 h-24 mb-2 rounded-full">
+            <h3 class="text-xl font-semibold">Manoj Bansal</h3>
+            <p>Topic: Job Simulation Programs</p>
+        </div>
+    </section>
+
+    <section id="schedule" class="container mx-auto bg-white p-8 my-8 rounded shadow">
+        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 text-blue-900 mb-4">Schedule</h2>
+        <ul class="list-disc list-inside">
+            <li>10:00 AM - Opening Remarks</li>
+            <li>11:00 AM - Keynote Speaker</li>
+            <li>12:00 PM - Lunch Break</li>
+            <li>1:00 PM - Panel Discussion</li>
+            <li>3:00 PM - Networking</li>
+        </ul>
+    </section>
+
+    <section id="registration" class="container mx-auto bg-white p-8 my-8 rounded shadow">
+        <h2 class="text-2xl font-bold border-b-2 border-blue-900 pb-2 text-blue-900 mb-4">Registration</h2>
+        <form id="registration-form" class="flex flex-col max-w-xs mx-auto">
+            <label for="name" class="mb-2">Name:</label>
+            <input type="text" id="name" name="name" required class="mb-4 p-2 border border-gray-300 rounded">
+            <label for="email" class="mb-2">Email:</label>
+            <input type="email" id="email" name="email" required class="mb-4 p-2 border border-gray-300 rounded">
+            <button type="submit" class="bg-blue-900 text-white py-2 rounded hover:bg-blue-700">Register</button>
+        </form>
+    </section>
+
+    <footer class="bg-blue-900 text-white text-center p-4">
+        <p>&copy; 2024 Event Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
